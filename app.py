@@ -256,6 +256,7 @@ def main():
             
         # 초기 실행
         if run:
+            st.session_state.final_result = None
             execute_recommendation()
 
         
