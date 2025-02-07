@@ -4,7 +4,8 @@ from openai import OpenAI
 import streamlit as st
 
 # OpenAI API 설정
-openai_api_key = os.getenv("OPENAI_KEY")
+
+openai_api_key = st.secrets["openai_api_key"]
 client = OpenAI(api_key=openai_api_key)
 
 # 어시스턴트 생성 함수
